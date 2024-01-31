@@ -1,0 +1,215 @@
+.drop-down-menu {
+    display: none;
+}
+
+.drop-down-menu li {
+    border: solid transparent;
+    padding: 8px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.drop-down-menu li:hover {
+    color: rgba(49, 49, 225, 0.93);
+}
+
+.drop-down:hover .drop-down-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 999;
+    background-color: black;
+    color: white;
+    border: 1px solid blue;
+}
+
+.drop-down-menu1 {
+    display: none;
+}
+
+.drop-down1:hover .drop-down-menu1 {
+    display: flex;
+}
+
+.drop-down-menu2 {
+    display: none;
+}
+
+.drop-down2:hover .drop-down-menu2 {
+    display: flex;
+}
+
+.drop-down-menu3 {
+    display: none;
+}
+
+.drop-down3:hover .drop-down-menu3 {
+    display: flex;
+}
+
+.firstnested,
+.secondnested,
+.thirdnested {
+    display: none;
+}
+
+.drop-down1:hover .firstnested {
+    display: flex;
+    position: relative;
+    left: 272px;
+    bottom: 39px;
+    background-color: black;
+    border: 1px solid blue;
+}
+
+.drop-down2:hover .secondnested {
+    display: flex;
+    position: relative;
+    left: 272px;
+    bottom: 39px;
+    background-color: black;
+    border: 1px solid blue;
+}
+
+.drop-down3:hover .thirdnested {
+    display: flex;
+    position: relative;
+    left: 288px;
+    bottom: 37px;
+    background-color: black;
+    border: 1px solid blue;
+}
+
+.headerS {
+    width: 100%;
+    height: 700px;
+    border-radius: 0 0 10% 10%;
+    background: url("./header-background-2.jpg") center center/cover;
+    animation: animate linear 4s infinite;
+}
+
+.menuItems {
+    position: relative;
+    transition: all ease 0.3s;
+}
+
+.menuItems:hover {
+    color: rgb(94, 94, 141);
+}
+
+.menuItems::after {
+    content: "";
+    width: 0;
+    background-color: rgb(94, 94, 141);
+    height: 2px;
+    position: absolute;
+    margin: 0;
+    top: 27.5px;
+    left: 8px;
+    transition: all ease-in-out 0.3s;
+}
+
+.menuItems:hover::after {
+    width: 82%;
+}
+
+@keyframes animate {
+    0% {
+        background: url("./backgriund-header08t746.jpg") center center/cover;
+    }
+
+    50% {
+        background: url("./background-header3443.jpg") center center/cover;
+    }
+
+    100% {
+        background: url("./header-background-2.jpg") center center/cover;
+    }
+}
+
+.menu-cont2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 96px;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+.course1 {
+    border: 5px solid blue;
+    text-align: center;
+    border-width: 10px;
+    border-radius: 50%;
+}
+
+.menuItems2 {
+    padding: 8px;
+}
+
+@media screen and (max-width: 763px) {
+    .drop-down1:hover .firstnested {
+        position: inherit;
+        left: 0;
+        bottom: 0;
+    }
+
+    .drop-down2:hover .secondnested {
+        position: inherit;
+    }
+
+    .drop-down3:hover .thirdnested {
+        position: inherit;
+    }
+
+    .drop-down-menu li {
+        padding: 4px;
+    }
+
+    .drop-down-menu li:hover {
+        color: white;
+    }
+
+    .menuItems {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .course-item{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .menuItems:hover::after {
+        width: 0;
+    }
+
+}
+
+@media screen and (max-width: 302px) {
+    .contactNow {
+        display: none;
+    }
+}
+
+/* About Us Page */
+
+.header-bg{
+    background: url("https://tenbyteinstitute.com/wp-content/uploads/2023/08/6586757_3357683-scaled.jpg") center center/cover;
+    height: 555px;
+}
+
+/* Enroll Now Page */
+
+.enroll-bg{
+    background: url("./header-background-2.jpg") no-repeat center center/cover;
+}
+.optiontag{
+    padding: 5px 7px;
+    background-color: #fafafa;
+}
+
+/* Contact Us Page */
+
+.bg-img{
+    background: linear-gradient(rgba(94, 131, 209, 0.5), rgba(94, 131, 209, 0.5)), url("/dist/contact-us-bg.jpeg") no-repeat center center/cover;
+}
